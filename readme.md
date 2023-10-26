@@ -8,11 +8,13 @@
         '''
             pip install virtualenv
         '''
+        
     - then create a virtualenv using:
 
         '''
             virtualenv envname
         '''
+
     - then activate it using:
 
         '''
@@ -40,12 +42,13 @@ create .env file at the root directory and add all needed parameters:
 
 # Run script
 ### you can run the script using:
-1. 
-    '''
-    uvicorn main:app
-    '''
-or
-2. 
-    '''
-    python main.py
-    '''
+    
+'''
+uvicorn main:app
+'''
+
+or 
+
+'''
+python main.py
+'''
