@@ -1,0 +1,8 @@
+fastapi
+uvicorn
+mysql-connector-python
+sqlmodel
+SQLAlchemy-Utils
+python-dotenv
+pandas
+xlrd
