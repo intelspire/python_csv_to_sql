@@ -4,37 +4,43 @@
 
 2. create a virtual enviroment and activate it
     - if you don't have the virtualenv tool, install it using
-    '''
-        pip install virtualenv
-    '''
+        '''
+            pip install virtualenv
+        '''
     - then create a virtualenv using
-    '''
-        virtualenv envname
-    '''
+        '''
+            virtualenv envname
+        '''
     - then activate it using
-    '''
-        envname/Scripts/activate  #for windows
-        
-        source envname/bin/activate #for linux
-    '''
+        '''
+            envname/Scripts/activate  #for windows
+            
+            source envname/bin/activate #for linux
+        '''
 
 3. install all requirements using
-'''
-    pip install -r requirements.txt
-'''
+    '''
+        pip install -r requirements.txt
+    '''
 
 # Create .env file
 create .env file at the root directory and add all needed parameters
-'''
-    DB_USER = root
-    DB_PASSWORD = ...
-    DB_NAME = ...
-    DB_HOST = localhost
-    DB_PORT = 3306
-'''
+    '''
+        DB_USER = root
+        DB_PASSWORD = ...
+        DB_NAME = ...
+        DB_HOST = localhost
+        DB_PORT = 3306
+    '''
 
 # Run script
 ### you can run the script using:
-1. '''uvicorn main:app'''
+1. 
+    '''
+    uvicorn main:app
+    '''
 or
-2. '''python main.py'''
+2. 
+    '''
+    python main.py
+    '''
