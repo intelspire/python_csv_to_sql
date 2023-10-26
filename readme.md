@@ -5,29 +5,28 @@
 2. create a virtual enviroment and activate it
     - if you don't have the virtualenv tool, install it using:
 
-        '''
+        '
             pip install virtualenv
-        '''
+        '
         
     - then create a virtualenv using:
 
-        '''
+        '
             virtualenv envname
-        '''
+        '
 
     - then activate it using:
 
         '''
-            envname/Scripts/activate  #for windows
-            
+            envname/Scripts/activate  #for windows    
             source envname/bin/activate #for linux
         '''
 
 3. install all requirements using:
 
-    '''
+    '
         pip install -r requirements.txt
-    '''
+    '
 
 # Create .env file
 create .env file at the root directory and add all needed parameters:
@@ -43,12 +42,12 @@ create .env file at the root directory and add all needed parameters:
 # Run script
 ### you can run the script using:
     
-'''
+'
 uvicorn main:app
-'''
+'
 
 or 
 
-'''
+'
 python main.py
-'''
+'
