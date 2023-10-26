@@ -3,28 +3,33 @@
     - if it's not installed, you can install it from [MySQL installer](https://dev.mysql.com/downloads/installer/) #for windows
 
 2. create a virtual enviroment and activate it
-    - if you don't have the virtualenv tool, install it using
+    - if you don't have the virtualenv tool, install it using:
+
         '''
             pip install virtualenv
         '''
-    - then create a virtualenv using
+    - then create a virtualenv using:
+
         '''
             virtualenv envname
         '''
-    - then activate it using
+    - then activate it using:
+
         '''
             envname/Scripts/activate  #for windows
             
             source envname/bin/activate #for linux
         '''
 
-3. install all requirements using
+3. install all requirements using:
+
     '''
         pip install -r requirements.txt
     '''
 
 # Create .env file
-create .env file at the root directory and add all needed parameters
+create .env file at the root directory and add all needed parameters:
+
     '''
         DB_USER = root
         DB_PASSWORD = ...
