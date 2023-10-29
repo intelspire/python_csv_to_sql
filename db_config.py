@@ -1,5 +1,5 @@
 from pathlib import Path
-from sqlmodel import create_engine
+from sqlmodel import SQLModel, Session, create_engine
 from sqlalchemy_utils import database_exists, create_database
 import os
 from dotenv import load_dotenv
@@ -21,5 +21,13 @@ DATABASE_URL = (
 
 engine = create_engine(DATABASE_URL, echo=True)
 
-if not database_exists(engine.url):
-    create_database(engine.url)
+
+async def init_db():
+    if not database_exists(engine.url):
+        create_database(engine.url)
+    SQLModel.metadata.create_all(engine)
+
+
+def get_session():
+    with Session(engine, future=True) as session:
+        yield session
