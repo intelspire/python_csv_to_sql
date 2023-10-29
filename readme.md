@@ -65,6 +65,7 @@ or
     '
 
 the source folder and destination folder is passed as script arguments like:
+
     '
     python main.py --src "..." --dst "..."
     '
