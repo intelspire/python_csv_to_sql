@@ -111,6 +111,6 @@ if __name__ == "__main__":
     with Session(db_config.engine, future=True) as session:
         try:
             process_data(src=args.src, dst=args.dst, session=session)
-            print("Data is inserted into the datasrc")
+            print("Data is inserted into the database")
         except:
             print("Failed to insert the data")
