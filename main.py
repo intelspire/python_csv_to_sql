@@ -102,7 +102,7 @@ if __name__ == "__main__":
     parser.add_argument("--src", type=str, default="from")
     parser.add_argument("--dst", type=str, default="processed")
 
-    args, left_argv = parser.parse_known_args()
+    args, _ = parser.parse_known_args()
 
     loop = asyncio.get_event_loop()
     coroutine = db_config.init_db()
