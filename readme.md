@@ -45,9 +45,25 @@ create .env file at the root directory and add all needed parameters:
 '
 uvicorn main:app
 '
+the source folder and destination folder is passed as a request body like:
+"""
+{
+    "dirs": {
+        "src": "...",
+        "dst": "..."
+    }
+}
+"""
+
 
 or 
+
 
 '
 python main.py
 '
+
+the source folder and destination folder is passed as script arguments like:
+"""
+python main.py --src "..." --dst "..."
+"""
