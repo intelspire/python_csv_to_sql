@@ -42,27 +42,29 @@ create .env file at the root directory and add all needed parameters:
 # Run script
 ### you can run the script using:
     
-'
-uvicorn main:app
-'
+    '
+    uvicorn main:app
+    '
 the source folder and destination folder is passed as a request body like:
-'''
-{
-    "dirs": {
-        "src": "...",
-        "dst": "..."
+
+    '''
+    {
+        "dirs": {
+            "src": "...",
+            "dst": "..."
+        }
     }
-}
-'''
+    '''
 
 
 or 
 
 
-'
-python main.py
-'
+    '
+    python main.py
+    '
 
 the source folder and destination folder is passed as script arguments like:
-'''python main.py --src "..." --dst "..."
-'''
+    '
+    python main.py --src "..." --dst "..."
+    '
