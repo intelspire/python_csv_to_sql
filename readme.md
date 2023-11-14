@@ -45,6 +45,14 @@ create .env file at the root directory and add all needed parameters:
     '
     uvicorn main:app
     '
+
+the request url is:
+
+    '''   
+        Method: Post
+        URL: {host(change this with the real host)}/process
+    '''
+
 the source folder and destination folder is passed as a request body like:
 
     '''
